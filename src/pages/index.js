@@ -1,7 +1,9 @@
 import React from 'react'
 import Link from 'gatsby-link'
+import Layout from '../components/layout';
 
 const IndexPage = () => (
+<Layout>
   <div>
     <h1>Hi people</h1>
     <p>Welcome to your new Gatsby site.</p>
@@ -10,6 +12,7 @@ const IndexPage = () => (
     <li><Link to="/contact/">Basic contact form</Link></li>
 
   </div>
+  </Layout>
 )
 
 export default IndexPage

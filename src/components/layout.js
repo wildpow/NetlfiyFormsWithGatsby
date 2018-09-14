@@ -5,16 +5,16 @@ import Helmet from 'react-helmet'
 import Header from '../components/header'
 import './index.css'
 
-const Layout = ({ children, data }) => (
+const Layout = (props) => (
   <div>
-    <Helmet
+    {/* <Helmet
       title={data.site.siteMetadata.title}
       meta={[
         { name: 'description', content: 'Sample' },
         { name: 'keywords', content: 'sample, something' },
       ]}
-    />
-    <Header siteTitle={data.site.siteMetadata.title} />
+    /> */}
+    {/* <Header siteTitle={data.site.siteMetadata.title} /> */}
     <div
       style={{
         margin: '0 auto',
@@ -23,7 +23,7 @@ const Layout = ({ children, data }) => (
         paddingTop: 0,
       }}
     >
-      {children()}
+      {props.children}
     </div>
   </div>
 )
